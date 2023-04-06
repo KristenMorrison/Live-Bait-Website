@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/01c8e46bc2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Source+Serif+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
+    <title>Respooling Service</title>
+    <!--
+		Author: Kristen Morrison
+		Date: March 28, 2023
+		Filename: service.html
+		Assignment: Exam 2 - Live Bait Website
+	-->
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="bait.html">Shop Bait</a></li>
+            <li><a href="service.html">Respooling Service</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100057407261126" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #333;"></i></a></li>
+        </ul>
+    </nav>
+
+    <img class="reelpic" src="reels.png" alt="3 reels">
+
+    <div class="ServiceForm">
+        <h1 id="formHeader1">Respooling Service</h1>
+        <p class="ServiceText">We have various lines in bulk stock. We will gladly reline your spools within 24 hours.
+            Prices range from 2 cents a yard to 35 cents a yard depending on the line you choose. </p>
+        <p class="ServiceText">Please note that close faced reels(spincast/push-button) we do have a service charge of
+            $2 per reel as these need to be taken apart and are a little more time consuming.</p>
+
+        <h2 id="schedulerequest">Please fill out the form below and we will contact you to schedule your service time.
+        </h2>
+    </div>
+    <form id="form" action="thankyou.html" method="get">
+        <label for="fName" class="formTitles">Name:</label><br>
+        <input type="text" id="fName" name="username" placeholder="First" autofocus required>
+
+        <label for="LName"></label>
+        <input type="text" id="LName" name="username" placeholder="Last"><br>
+
+
+        <label for="phone" class="formTitles">Phone number:</label><br>
+        <input type="tel" id="phone" name="userphone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required><br>
+
+        <label for="e-mail" class="formTitles">Email:</label><br>
+        <input type="email" id="e-mail" name="useremail" placeholder="Ex: HowardsLakeside@gmail.com"><br>
+
+        <label for="reeltype" class="formTitles">Reel Type:</label><br>
+        <select id="reeltype" name="reeltype">
+            <option value="Spincast">Spincast</option>
+            <option value="Bait">Baitcasting</option>
+            <option value="Spinn">Spinning</option>
+            <option value="Fly">Fly</option>
+        </select>
+
+        <h4 class="formAddInfo">Additional Information</h4>
+        <textarea name="comments" rows="10" cols="50"></textarea><br>
+        <input class="submit" type="submit" value="Schedule Service">
+    </form>
+
+
+    <footer>
+        <p>
+            <a href="https://www.facebook.com/profile.php?id=100057407261126" target="_blank">
+                <i class="fa-brands fa-facebook fa-2xl" style="color: #808080;"></i></a>
+        </p>
+        <h3>Where to Find Us:</h3>
+        <p id="address">1919 Croft Rd<br>
+            Springfield, Ohio 45503<br>
+            (937) 505-1037<br>
+            <a href="mailto:howardslakeside@gmail.com">HowardsLakeside</a>
+        <p class="copyright">&copy;Howard's Lakeside General Store</p>
+    </footer>
+
+</body>
+
+</html>

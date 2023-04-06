@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/01c8e46bc2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Source+Serif+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script>
+        function printQuery() {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                document.write(pair[0] + ": " + pair[1] + "<br />");
+            }
+        }
+    </script>
+    <title>Thank You</title>
+
+    <!--
+		Author: Kristen Morrison
+		Date: March 28, 2023
+		Filename: thankyou.html
+		Assignment: Exam 2 - Live Bait Website
+	-->
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="bait.html">Shop Bait</a></li>
+            <li><a href="service.html">Respooling Service</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100057407261126" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #333;"></i></a></li>
+        </ul>
+    </nav>
+
+    <img class="thankyoupic" src="thankyou.jpg" alt="fishing equipment">
+    <div class="thankyouContainer">
+        <h1>Thank you for visiting Howard's Lakeside General Store</h1>
+        <h2 id="thanksSubHead">We have received your request for Respooling Service</h2>
+        <p class="thanks1">We will be in contact shortly to schedule your service.</p>
+        <p class="thanks2">In the meantime, enjoy this video while you wait!</p>
+        <video class="video" controls autoplay loop>
+            <source src="fish.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        printQuery();
+    </script>
+
+    <footer>
+        <p>
+            <a href="https://www.facebook.com/profile.php?id=100057407261126" target="_blank">
+                <i class="fa-brands fa-facebook fa-2xl" style="color: #808080;"></i></a>
+        </p>
+        <h3>Where to Find Us:</h3>
+        <p id="address">1919 Croft Rd<br>
+            Springfield, Ohio 45503<br>
+            (937) 505-1037<br>
+            <a href="mailto:howardslakeside@gmail.com">HowardsLakeside</a>
+        <p class="copyright">&copy;Howard's Lakeside General Store</p>
+    </footer>
+
+</body>
+
+</html>
